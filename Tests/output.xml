@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190118 21:50:53.471" generator="Robot 3.1 (Python 2.7.6 on linux2)">
+<suite source="/home/tj/PycharmProjects/机票/PntDict-打印字典.robot" id="s1" name="PntDict-打印字典">
+<test id="s1-t1" name="TestCase001">
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<assign>
+<var>${dict_test}</var>
+</assign>
+<msg timestamp="20190118 21:50:53.540" level="INFO">${dict_test} = {}</msg>
+<status status="PASS" endtime="20190118 21:50:53.540" starttime="20190118 21:50:53.539"></status>
+</kw>
+<kw name="打印字典">
+<doc>传入字典参数，自动打印</doc>
+<arguments>
+<arg>${dict_test}</arg>
+</arguments>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${dict}</arg>
+<arg>a=1</arg>
+<arg>b=2</arg>
+<arg>c=3</arg>
+</arguments>
+<status status="PASS" endtime="20190118 21:50:53.542" starttime="20190118 21:50:53.542"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${dict}</arg>
+</arguments>
+<msg timestamp="20190118 21:50:53.543" level="INFO">{u'a': u'1', u'c': u'3', u'b': u'2'}</msg>
+<status status="PASS" endtime="20190118 21:50:53.543" starttime="20190118 21:50:53.542"></status>
+</kw>
+<status status="PASS" endtime="20190118 21:50:53.543" starttime="20190118 21:50:53.541"></status>
+</kw>
+<status status="PASS" endtime="20190118 21:50:53.543" critical="yes" starttime="20190118 21:50:53.539"></status>
+</test>
+<status status="PASS" endtime="20190118 21:50:53.544" starttime="20190118 21:50:53.471"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="PntDict-打印字典" pass="1">PntDict-打印字典</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
