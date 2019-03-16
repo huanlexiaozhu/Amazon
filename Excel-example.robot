@@ -9,7 +9,7 @@ Library  ExcelLibrary
 *** Test Cases ***
 Write Excel Test
 Open Excel     kusan.xlsx
-ExcelLibrary.Put String To Cell     sheet1  2   1  kusan
+ExcelLibrary.Put String To Cell     sheet1  1   1  kusan
 @{content}  Create list
 append to list  ${content}  1   1   testcase1
 append to list  ${content}  2   1   testcase2
