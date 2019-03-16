@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation   An example of ExcelLibrary of RF
+Documentation   An example of ExcelLibrary of RobotFramework
 
 Library     ExcelLibrary
 Library     Collections
